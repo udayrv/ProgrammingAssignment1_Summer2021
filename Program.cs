@@ -76,6 +76,9 @@ namespace Assignment1
         }
     }
     class Question1
+        // Logic:
+        // We need to increase x by +1 if it is R and -1 if it is L
+        // We need to increase y by +1 if it is U and -1 if it is D
     {
         public static bool JudgeCircle(string moves)
         {
@@ -106,7 +109,15 @@ namespace Assignment1
         }
 
     }
+    // Self Reflection:
+    //
+    // Time complexity is O(N)
+    // We have learnt the basic program to control the moments of a Robot in a 2D plane. 
+    // 
     public class Question2
+        //Logic:
+        // We iterate over all the characters of the string and count the single time used char's.
+        // if total is 26, then return ture if not false
     {
         public static bool CheckIfPangram(string str)
         {
@@ -136,7 +147,14 @@ namespace Assignment1
 
         }
     }
+    // Self Reflection:
+    //
+    // Time complexity is O(N2)
+    // We have learnt the string processing and basics of string functions. 
+    //  
     class Question3
+        // Logic:
+        // We doube iterate over the given array indices and check if there are any element matches for a pair of indices in array.
     {
         public static int NumIdenticalPairs(int[] nums)
         {
@@ -162,7 +180,14 @@ namespace Assignment1
             }
         }
     }
+    // Self Reflection:
+    //
+    // Time complexity is O(N2)
+    // We have learnt how to work with arrays and bacis of doube looping and the working with index of an array. 
+    //
     class Question4
+    // Logic:
+    // First we find the cummulative sum of the given array and check the pivot index by iterating over that array.
     {
         public static int PivotIndex(int[] nums)
         {
@@ -197,7 +222,15 @@ namespace Assignment1
         }
 
     }
+    // Self Reflection:
+    //
+    // Time complexity is O(N)
+    // We have learnt some advance techniques of working on array and it's indexes. 
+    //
     class Program5
+        // Logic:
+        // We iterate the given strings with characters and merge the characters alternatively to our result.
+        // If there are any additional characters, we simply append at the end of the result.
     {
         public static string merge(string word1, string word2)
         {
@@ -227,13 +260,22 @@ namespace Assignment1
             }
         }
     }
+    // Self Reflection:
+    //
+    // Time complexity is O(N)
+    // We have learnt how to work with concatination of arrays and deal with multiple char arrays.
+    //
     class Program6
+        // Logic:
+        // we divide the given scentence on white spaces and iterate over all the words in a scentence.
+        // Change the words in a string according to the conditions given for "Goat Latin" language and finally merge all the words.
+        // 
     {
         public static string ToGoatLatin(string sentence)
         {
             try
             {
-                var words = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var words = sentence.Split(' ', (char)StringSplitOptions.RemoveEmptyEntries);
                 string suffix = "a", result = "";
                 var vowels = new List<char>() { 'A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u' };
                 foreach (var word in words)
@@ -259,7 +301,12 @@ namespace Assignment1
             }
         }
     }
-
+    // Self Reflection:
+    //
+    // Time complexity is O(N)
+    // We have learnt some moderate level of string manipulation on string arrays. 
+    // We have seen cooncatination of strigs and filtering of words according to it's first letter.
+    //
 
 }
 
